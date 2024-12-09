@@ -1,17 +1,14 @@
+version: 2.1
+
 jobs:
   run_tests:
     docker:
-      - image: circleci/node:21
+      - image: node:21.6.1-alpine
 
     steps:
       - checkout
-      - run: 
-        name: Install dependencies
-        command: yarn install
-
-      - run:
-        name: Run tests
-        command: yarn test
+      - run: yarn install
+      - run: yarn test
 
 workflows:
   version: 2

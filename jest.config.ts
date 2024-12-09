@@ -8,6 +8,7 @@ const jestConfig: JestConfigWithTsJest = {
   testMatch: ['**/**/*.test.ts'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   verbose: true,
+  forceExit: true,
 };
 
 export default jestConfig;

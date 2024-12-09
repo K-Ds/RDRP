@@ -9,3 +9,5 @@ dist/
 .yarn*
 
 coverage/
+
+test-results
